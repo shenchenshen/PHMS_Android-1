@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="security_question">
+        <item>What was your childhood nickname?</item>
+        <item>What is your favorite movie?</item>
+        <item>In what town was your first job?</item>
+    </string-array>
+</resources>
