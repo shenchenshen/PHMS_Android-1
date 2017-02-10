@@ -2,8 +2,10 @@ package fragment;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.method.PasswordTransformationMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +23,7 @@ import http.Constant;
 import http.HttpUtil;
 import okhttp3.Headers;
 import okhttp3.Response;
+import service.MyApplication;
 import util.FormatUtil;
 
 /**
@@ -66,6 +69,8 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
 
         etEmail = (MaterialEditText) v.findViewById(R.id.email);
         etPassword = (MaterialEditText) v.findViewById(R.id.password);
+        etPassword.setTypeface(Typeface.DEFAULT);
+        etPassword.setTransformationMethod(new PasswordTransformationMethod());
 
         register.setOnClickListener(this);
         login.setOnClickListener(this);

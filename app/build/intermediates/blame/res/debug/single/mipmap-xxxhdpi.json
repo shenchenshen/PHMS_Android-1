@@ -4,6 +4,10 @@
         "source": "E:\\workspace\\androidstudio\\PHMS\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\hopelty\\AndroidStudioProjects\\PHMS_Android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\hopelty\\AndroidStudioProjects\\PHMS_Android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "E:\\workspace\\androidstudio\\PHMS_Android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
         "source": "E:\\workspace\\androidstudio\\PHMS_Android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     }

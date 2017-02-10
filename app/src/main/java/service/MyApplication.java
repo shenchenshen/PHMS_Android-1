@@ -2,6 +2,8 @@ package service;
 
 import android.app.Application;
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.inputmethodservice.Keyboard;
 
 import cn.finalteam.okhttpfinal.OkHttpFinal;
 import cn.finalteam.okhttpfinal.OkHttpFinalConfiguration;
@@ -13,7 +15,13 @@ import okhttp3.Headers;
 
 public class MyApplication extends Application {
 
+    public static final String CURRENT_USER = "current_user";
+    public static final String SECURITY_QUESTION = "security_question";
+    public static final String SQ_ANSWER = "sq_answer";
+    public static final String APPLICATION_NAME = "PHMS";
+
     private static Context context;
+    public static SharedPreferences preferences;
 
     @Override
     public void onCreate() {
@@ -21,6 +29,8 @@ public class MyApplication extends Application {
 
         context = this;
 
+        preferences = getSharedPreferences(
+                APPLICATION_NAME, Context.MODE_PRIVATE);
         initHttpUtil();
     }
 
@@ -35,7 +45,23 @@ public class MyApplication extends Application {
         OkHttpFinal.getInstance().init(builder.build());
     }
 
+    public static SharedPreferences getPreferences(){
+        return preferences;
+    }
+
+    public static String getPreferences(String key){
+        return preferences.getString(key,"");
+    }
+
+    public static void setStringPref(String key, String value){
+        SharedPreferences.Editor ed = preferences.edit();
+        ed.putString(key, value);
+        ed.commit();
+    }
+
     public static Context getContext(){
         return context;
     }
+
+
 }
