@@ -1,20 +1,20 @@
 package com.cse6324.phms;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import fragment.LoginFragment;
-import fragment.RegisterFragment;
-import fragment.SecurityQuestionFragment;
+import com.cse6324.fragment.LoginFragment;
+import com.cse6324.fragment.RegisterFragment;
+import com.cse6324.fragment.SecurityQuestionFragment;
+import com.cse6324.util.UserUtil;
+
+import static cn.finalteam.toolsfinal.StringUtils.isEmpty;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -31,6 +31,12 @@ public class LoginActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        if(!isEmpty(UserUtil.getUserInfo().getUid())){
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        }
 
         loginFragment = new LoginFragment();
         registerFragment = new RegisterFragment();

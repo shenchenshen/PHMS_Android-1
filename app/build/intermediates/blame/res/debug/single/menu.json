@@ -1,13 +1,5 @@
 [
     {
-        "merged": "E:\\workspace\\androidstudio\\PHMS\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_scrolling.xml",
-        "source": "E:\\workspace\\androidstudio\\PHMS\\app\\src\\main\\res\\menu\\menu_scrolling.xml"
-    },
-    {
-        "merged": "C:\\Users\\hopelty\\AndroidStudioProjects\\PHMS_Android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_scrolling.xml",
-        "source": "C:\\Users\\hopelty\\AndroidStudioProjects\\PHMS_Android\\app\\src\\main\\res\\menu\\menu_scrolling.xml"
-    },
-    {
         "merged": "E:\\workspace\\androidstudio\\PHMS_Android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_scrolling.xml",
         "source": "E:\\workspace\\androidstudio\\PHMS_Android\\app\\src\\main\\res\\menu\\menu_scrolling.xml"
     }

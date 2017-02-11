@@ -32,4 +32,7 @@ dependencies {
 
     //MaterialEditText
     compile 'com.rengwuxian.materialedittext:library:2.1.4'
+
+    //BottomBar
+    compile 'com.roughike:bottom-bar:2.1.1'
 }

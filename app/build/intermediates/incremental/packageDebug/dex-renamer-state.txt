@@ -1,4 +1,7 @@
-#Fri Feb 10 16:35:02 CST 2017
-base.0=C\:\\Users\\hopelty\\AndroidStudioProjects\\PHMS_Android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+#Sat Feb 11 04:24:31 CST 2017
+base.0=E\:\\workspace\\androidstudio\\PHMS_Android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_f3b8945b1c9bbe28d1373b75ef0569e19038140a
+renamed.1=classes2.dex
 renamed.0=classes.dex
-file.0=C\:\\Users\\hopelty\\AndroidStudioProjects\\PHMS_Android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.1=E\:\\workspace\\androidstudio\\PHMS_Android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_6365c6081b9e362d5a3cc3554aeb3cdbcecc7cea\\classes.dex
+base.1=E\:\\workspace\\androidstudio\\PHMS_Android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_6365c6081b9e362d5a3cc3554aeb3cdbcecc7cea
+file.0=E\:\\workspace\\androidstudio\\PHMS_Android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_f3b8945b1c9bbe28d1373b75ef0569e19038140a\\classes.dex
