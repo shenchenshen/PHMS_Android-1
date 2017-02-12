@@ -71,7 +71,7 @@ public class RegisterFragment extends Fragment implements View.OnClickListener{
                 if(isValid()) {
                     UserBean bean = new UserBean();
                     bean.setEmail(etEmail.getText().toString());
-                    bean.setUsername(etUsername.getText().toString());
+                    bean.setName(etUsername.getText().toString());
                     bean.setPassword(etPassword.getText().toString());
 
                     UserUtil.saveUserInfo(bean);

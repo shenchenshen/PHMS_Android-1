@@ -24,6 +24,10 @@
         "source": "E:\\workspace\\androidstudio\\PHMS_Android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_face_black_24dp.png"
     },
     {
+        "merged": "E:\\workspace\\androidstudio\\PHMS_Android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\back.png",
+        "source": "E:\\workspace\\androidstudio\\PHMS_Android\\app\\src\\main\\res\\mipmap-xxhdpi\\back.png"
+    },
+    {
         "merged": "E:\\workspace\\androidstudio\\PHMS_Android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
         "source": "E:\\workspace\\androidstudio\\PHMS_Android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     }

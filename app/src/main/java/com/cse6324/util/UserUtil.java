@@ -49,8 +49,8 @@ public class UserUtil {
             if(!isEmpty(bean.getToken()))
                 MyApplication.setStringPref(TOKEN,bean.getToken());
 
-            if(!isEmpty(bean.getUsername()))
-                MyApplication.setStringPref(UNAME,bean.getUsername());
+            if(!isEmpty(bean.getName()))
+                MyApplication.setStringPref(UNAME,bean.getName());
 
             if(!isEmpty(bean.getEmail()))
                 MyApplication.setStringPref(EMAIL,bean.getEmail());

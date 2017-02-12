@@ -8,7 +8,7 @@ public class UserBean {
     private String uid;
     private String token;
     private String email;
-    private String username;
+    private String name;
     private String password;
     private String gender;
     private String age;
@@ -30,8 +30,8 @@ public class UserBean {
         return email;
     }
 
-    public String getUsername() {
-        return username;
+    public String getName() {
+        return name;
     }
 
     public String getPassword() {
@@ -78,8 +78,8 @@ public class UserBean {
         this.email = email;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setPassword(String password) {

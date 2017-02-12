@@ -6,12 +6,14 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.cse6324.fragment.LoginFragment;
 import com.cse6324.fragment.RegisterFragment;
 import com.cse6324.fragment.SecurityQuestionFragment;
+import com.cse6324.service.MyApplication;
 import com.cse6324.util.UserUtil;
 
 import static cn.finalteam.toolsfinal.StringUtils.isEmpty;
@@ -27,12 +29,13 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        MyApplication.getInstance().addActivity(this);
         setContentView(R.layout.activity_login);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        if(!isEmpty(UserUtil.getUserInfo().getUid())){
+        if (!isEmpty(UserUtil.getUserInfo().getUid())) {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
             finish();
@@ -45,16 +48,16 @@ public class LoginActivity extends AppCompatActivity {
         changeFragment(0);
     }
 
-    public void changeFragment(int index){
+    public void changeFragment(int index) {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
 
-        if(currentFragment != null){
+        if (currentFragment != null) {
             ft.hide(currentFragment);
         }
 
         Fragment fragment = null;
 
-        switch (index){
+        switch (index) {
             case 0:
                 fragment = loginFragment;
                 break;
@@ -79,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        //getMenuInflater().inflate(R.menu.menu_scrolling, menu);
+        getMenuInflater().inflate(R.menu.menu_none, menu);
         return true;
     }
 
@@ -88,4 +91,18 @@ public class LoginActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            MyApplication.getInstance().AppExit();
+        }
+        return false;
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        //结束Activity&从栈中移除该Activity
+        MyApplication.getInstance().finishActivity(this);
+    }
 }

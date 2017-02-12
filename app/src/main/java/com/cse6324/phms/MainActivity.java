@@ -11,6 +11,7 @@ import com.cse6324.fragment.DietFragment;
 import com.cse6324.fragment.MedicineFragment;
 import com.cse6324.fragment.Notefragment;
 import com.cse6324.fragment.ProfileFragment;
+import com.cse6324.service.MyApplication;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
 
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        MyApplication.getInstance().addActivity(this);
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -98,5 +100,12 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        //结束Activity&从栈中移除该Activity
+        MyApplication.getInstance().finishActivity(this);
     }
 }
