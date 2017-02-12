@@ -1,11 +1,19 @@
 [
     {
+        "merged": "E:\\workspace\\androidstudio\\PHMS_Android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_settings_black_24dp.png",
+        "source": "E:\\workspace\\androidstudio\\PHMS_Android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_settings_black_24dp.png"
+    },
+    {
         "merged": "E:\\workspace\\androidstudio\\PHMS_Android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_local_dining_black_24dp.png",
         "source": "E:\\workspace\\androidstudio\\PHMS_Android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_local_dining_black_24dp.png"
     },
     {
         "merged": "E:\\workspace\\androidstudio\\PHMS_Android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_local_pill_black_24dp.png",
         "source": "E:\\workspace\\androidstudio\\PHMS_Android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_local_pill_black_24dp.png"
+    },
+    {
+        "merged": "E:\\workspace\\androidstudio\\PHMS_Android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_border_color_black_24dp.png",
+        "source": "E:\\workspace\\androidstudio\\PHMS_Android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_border_color_black_24dp.png"
     },
     {
         "merged": "E:\\workspace\\androidstudio\\PHMS_Android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
